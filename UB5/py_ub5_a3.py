@@ -21,12 +21,12 @@ class MyGzip(object):
         print(type(self.gzip_inhalt))
 
 
-def main():
-    In1 = MyGzip("py_ub5_aufgabe2.txt.gz")
-    In1.zip_read()
-    In1.ausgabe()
-    In1.show_type()
+# def main():
+#     In1 = MyGzip("py_ub5_aufgabe2.txt.gz")
+#     In1.zip_read()
+#     In1.ausgabe()
+#     In1.show_type()
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()

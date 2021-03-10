@@ -2,6 +2,8 @@
 import gzip
 import shutil
 
+from py_ub5_a3 import MyGzip
+# import py_ub5_a3
 
 def aufgabe1(bisZahl):
     def allePrimzahlenAll(bisZahl):
@@ -60,6 +62,11 @@ def main():
     aufgabe1(1000)
     aufgabe2()
     aufgabe3()
+
+    In1 = MyGzip("./UB5/py_ub5_aufgabe2.txt.gz")
+    In1.zip_read()
+    In1.ausgabe()
+    In1.show_type()
 
 
 if __name__ == "__main__":
