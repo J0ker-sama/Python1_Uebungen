@@ -18,7 +18,7 @@ def aufgabe1(bisZahl):
     def inFileSchreiben(primenZahlenListe):
         zeichenkette = ", ".join(primenZahlenListe)
 
-        with open("py_ub5_aufgabe1.txt", "w") as txt_file:
+        with open("./UB5/py_ub5_aufgabe1.txt", "w") as txt_file:
             txt_file.write(zeichenkette)
             txt_file.write("\n")
             txt_file.write("Laenge: {}".format(len(primenZahlenListe)))
@@ -27,7 +27,7 @@ def aufgabe1(bisZahl):
 
 
 def aufgabe2():
-    with open("py_ub5_aufgabe2.txt", "w") as txt_file:
+    with open("./UB5/py_ub5_aufgabe2.txt", "w") as txt_file:
         txt_file.write("Florian Luebbe\n")
         txt_file.write("Sven Birkenfeld\n")
         txt_file.write("Max Huesmann\n")
@@ -40,7 +40,7 @@ def aufgabe2():
         txt_file.write("asdAS SDRWF\n")
 
     line_liste = []
-    with open("py_ub5_aufgabe2.txt", "r") as txt_file:
+    with open("./UB5/py_ub5_aufgabe2.txt", "r") as txt_file:
         for line in txt_file:
             # print(line.strip("\n"))
             line_liste.append(line.strip("\n"))
@@ -50,8 +50,8 @@ def aufgabe2():
 
 
 def aufgabe3():
-    with open("py_ub5_aufgabe2.txt", "rb") as f_in:
-        with gzip.open("py_ub5_aufgabe2.txt.gz", "wb") as f_out:
+    with open("./UB5/py_ub5_aufgabe2.txt", "rb") as f_in:
+        with gzip.open("./UB5/py_ub5_aufgabe2.txt.gz", "wb") as f_out:
             f_out.writelines(f_in)
             # shutil.copyfileobj(f_in, f_out)
 
