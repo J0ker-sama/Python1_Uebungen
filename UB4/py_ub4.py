@@ -31,22 +31,22 @@ def aufgabe1(zeichenkette):
     # ['1,2,3,4', '[a,b,c,d]', 'help', 'run', '[[a,b],[1,2]]']
     # ['DONE', 'DONE', 'help', 'run', '[[a,b],[1,2]]']
     # ['DONE', 'DONE', 'DONE', 'DONE', [[[a,b]][[1,2]]']
-    # print(zeichenkette_liste)
-    # neue_zeichenkette_liste = []
-    # for ele in zeichenkette_liste:
-    #     if "[" and "]" in ele:
-    #         tempListe = []
-    #         # for e in ele[1:-1]:
-    #         tempListe = ele[1:-1].split(",")
-    #         neue_zeichenkette_liste.append(tempListe)
-    #     elif "," in ele:
-    #         # tempListe = []
-    #         # tempListe = ele.split(",")
-    #         # neue_zeichenkette_liste.append(tempListe)
-    #         neue_zeichenkette_liste.append(ele)
-    #     else:
-    #         neue_zeichenkette_liste.append(ele)
-    # print(neue_zeichenkette_liste)
+    print(zeichenkette_liste)
+    neue_zeichenkette_liste = []
+    for ele in zeichenkette_liste:
+        if "[" and "]" in ele:
+            tempListe = []
+            # for e in ele[1:-1]:
+            tempListe = ele[1:-1].split(",")
+            neue_zeichenkette_liste.append(tempListe)
+        elif "," in ele:
+            tempListe = []
+            tempListe = ele.split(",")
+            neue_zeichenkette_liste.append(tempListe)
+            # neue_zeichenkette_liste.append(ele)
+        else:
+            neue_zeichenkette_liste.append(ele)
+    print(neue_zeichenkette_liste)
     # [1,2,3,4, ['a','b','c','d'], "help", "run", [["a","b"],[1,2]]]
 
 
