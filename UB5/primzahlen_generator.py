@@ -6,6 +6,7 @@ def returnPrimzahlenListe(bisZahlen):
         for j in range(2, i):
             if(i % j == 0):
                 istTeiler = True
+                break
         if(istTeiler == False):
             primZahlListe.append(i)
     return primZahlListe
