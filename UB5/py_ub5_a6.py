@@ -14,7 +14,7 @@ def jsonDateiErstellen():
         "sensor": [-10,0,10]
     }
 
-    with open("eintrag.json","w") as jfile:
+    with open("UB5/Files/eintrag.json","w") as jfile:
         json.dump(eintrag, jfile)
 
     s1 = json.dumps(eintrag) # macht ein String Object aus json Datein
@@ -31,7 +31,7 @@ def jsonDateiErstellen():
     # type(objekt) = <class 'dict'>
 
 def jsonDateinAuslesen():
-    with open("eintrag.json","r") as jfile:
+    with open("UB5/Files/eintrag.json","r") as jfile:
         s2 = json.load(jfile) # macht ein Python Object aus json Datein
     
     print("s2 =", s2)
@@ -46,7 +46,7 @@ def main():
     jsonDateiErstellen()
     jsonDict = jsonDateinAuslesen()
 
-    dbInst = MyDatenbank("uebungsblatt5.db", "Aufgabe7")
+    dbInst = MyDatenbank("UB5/Files/uebungsblatt5.db", "Aufgabe7")
     dbInst.connect()
     dbInst.generateTable()
 

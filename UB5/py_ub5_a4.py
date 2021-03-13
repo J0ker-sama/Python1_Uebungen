@@ -5,7 +5,7 @@ def main():
     sortierte_namens_liste = returnSortierteNamen()
     print(sortierte_namens_liste)
     
-    dbInst = MyDatenbank("uebungsblatt5.db", "Aufgabe3")
+    dbInst = MyDatenbank("UB5/Files/uebungsblatt5.db", "Aufgabe3")
     dbInst.connect()
     dbInst.generateTable()
     for i in range(len(sortierte_namens_liste)):

@@ -9,7 +9,7 @@ from mygzip import MyGzip
 #     f_in.close()
 
 def main():
-    In1 = MyGzip("namen.txt")
+    In1 = MyGzip("UB5/Files/namen.txt")
     In1.zip_write()
     In1.zip_read()
     In1.ausgabe()

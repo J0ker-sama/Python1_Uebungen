@@ -30,7 +30,7 @@ class MyDatenbank(object):
     def dbInCsv(self):
         query = "SELECT * FROM " + str(self.tab_name) + ";"
         answer = self.connect.execute(query)
-        with open("dbInCSV-" + str(self.tab_name) + ".csv", "w", newline="") as csvFile:
+        with open("UB5/Files/dbInCSV-" + str(self.tab_name) + ".csv", "w", newline="") as csvFile:
             csvwriter = csv.writer(csvFile, delimiter = ";")
             for row in answer:
                 csvwriter.writerow(row)

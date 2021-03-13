@@ -1,7 +1,7 @@
 
 def einlesen():
     string = ""
-    with open("namen.txt","r") as txtfile:
+    with open("UB5/Files/namen.txt","r") as txtfile:
         string += txtfile.read()
     string = string.strip()
     namens_liste = string.split("\n")
@@ -12,7 +12,7 @@ def sortierenNachNachnamen(namens_liste):
     return namens_liste
 
 def writeInTxt(sortierte_namensListe):
-    with open("namen.txt", "w") as txtfile:
+    with open("UB5/Files/namen.txt", "w") as txtfile:
         txtfile.write("")
         for name in sortierte_namensListe:
             txtfile.write(name + "\n")

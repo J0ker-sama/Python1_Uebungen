@@ -9,7 +9,7 @@ from mydatenbank_a5 import MyDatenbank
 
 
 def main():
-    dbInst = MyDatenbank("uebungsblatt5.db", "Aufgabe5")
+    dbInst = MyDatenbank("UB5/Files/uebungsblatt5.db", "Aufgabe5")
     dbInst.connect()
     dbInst.generateTable()
     primZahlenList = returnPrimzahlenListe(100)
